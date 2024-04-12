@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="container pt-5 text-center">Survey Form</h1>
+    <div class="container py-5 border border-dark">
+      <form>
+        <label for="name"
+          ><strong>Name <span class="span">*</span></strong></label
+        ><br />
+        <div class="name" style="display: flex">
+          <div class="input" style="margin-right: 15px">
+            <input type="text" name="first" id="name" required /> <br />
+            <label for="name">First</label>
+          </div>
+          <div class="input1">
+            <input type="text" name="last" id="name" required /><br />
+            <label for="name">Last</label><br />
+          </div>
+        </div>
+        <br />
+        <label for="email"
+          ><strong>Email </strong><span class="span">*</span></label
+        ><br />
+        <input type="email" name="email" id="email" required />
+        <br />
+        <br />
+        <h6>Your Experience <span class="span">*</span></h6>
+        <i class="fa fa-star" style="font-size: 30px;color:gold"></i>
+        <i class="fa fa-star" style="font-size: 30px;color:gold"></i>
+        <i class="fa fa-star" style="font-size: 30px;color:gold"></i>
+        <i class="fa fa-star-o" style="font-size: 30px"></i>
+        <i class="fa fa-star-o" style="font-size: 30px"></i>
+        <br />
+        <br />
+        <p>Overall, how would you rate your experience with us</p>
+        <p>
+          <strong
+            >How satisfied are you with <span class="span">*</span></strong
+          >
+        </p>
+        <table class="table table-striped table-hover">
+          <tr>
+            <th></th>
+            <th class="text-center">Very Unsatisfied</th>
+            <th class="text-center">Unsatisfied</th>
+            <th class="text-center">Neutral</th>
+            <th class="text-center">Satisfied</th>
+            <th class="text-center">Very Satisfied</th>
+          </tr>
+          <tr>
+            <td>Purchase</td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+          </tr>
+          <tr>
+            <td>Service</td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+          </tr>
+          <tr>
+            <td>Company Overall</td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+          </tr>
+        </table>
+        <p>
+          <strong>How likely are you to </strong><span class="span">*</span>
+        </p>
+        <table class="table table-striped table-hover">
+          <tr>
+            <th></th>
+            <th class="text-center">Very Unlikely</th>
+            <th class="text-center">Unlikely</th>
+            <th class="text-center">Neutral</th>
+            <th class="text-center">Likely</th>
+            <th class="text-center">Very Likely</th>
+          </tr>
+          <tr>
+            <td>Buy from us again</td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+          </tr>
+          <tr>
+            <td>Recommend our product to others</td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+          </tr>
+          <tr>
+            <td>Recommend our company to others</td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+            <td class="text-center"><input type="radio" /></td>
+          </tr>
+        </table>
+        <p><strong>Additional comments or suggestions</strong></p>
+        <textarea rows="4" cols="75" required></textarea><br />
+        <br />
+        <button><input type="submit" /></button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
